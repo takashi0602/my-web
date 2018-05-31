@@ -1,6 +1,6 @@
 # my-web
 
-> Nuxt.js project
+これは僕の推しを紹介するサイトである.
 
 ## Build Setup
 
