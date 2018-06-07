@@ -1,5 +1,6 @@
 <template lang="pug">
-  <top-page/>
+  section
+    top-page
 </template>
 
 <script>
@@ -12,6 +13,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+@import "~assets/scss/foundation/base.scss";
+@import "~assets/scss/object/common.scss";
 </style>
