@@ -1,52 +1,51 @@
-<template>
-  <div>
-    <nuxt/>
-  </div>
+<template lang="pug">
+  .st-container
+    header.l-header
+      h1 Idol Is God
+      .menu
+        label(for="menu") ボタン1
+        input.on-off(type="checkbox" id="menu")
+        ul
+          li
+            a(href="") リンク1
+          li
+            a(href="") リンク2
+          li
+            a(href="") リンク3
+          li
+            a(href="") リンク4
+    nuxt
 </template>
 
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<style lang="scss" scoped>
+@import "~assets/scss/foundation/base.scss";
+@import "~assets/scss/object/common.scss";
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.menu {
+  label {
+    background: green;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    margin: 0;
+    border: 1px solid #fff;
+  }
+  .on-off{
+    display: none;
+  }
+  ul {
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    li {
+      padding: 5px;
+    }
+  }
+  .on-off:checked + ul{
+    height: 200px;
+  }
 }
 </style>
