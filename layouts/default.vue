@@ -1,7 +1,7 @@
 <template lang="pug">
   .st-container
     header.l-header
-      h1 Idol Is God
+      h1.c-title Idol Is God
       .menu
         label(for="menu") ボタン1
         input.on-off(type="checkbox" id="menu")
@@ -21,7 +21,20 @@
 @import "~assets/scss/foundation/base.scss";
 @import "~assets/scss/object/common.scss";
 
+.l-header {
+  position: relative;
+}
+
+.c-title {
+  display: inline-block;
+}
+
 .menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   label {
     background: green;
     color: #fff;
