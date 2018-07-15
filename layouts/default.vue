@@ -35,7 +35,7 @@
 .menu {
   display: inline-block;
   position: absolute;
-  top: 28px;
+  top: 30px;
   right: 0;
   label {
     display: block;
@@ -75,25 +75,6 @@
   }
   .on-off:checked + ul{
     height: 200px;
-  }
-}
-
-.menu_pc {
-  display: none;
-  @include desktop() {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .c-link {
-    display: inline-block;
-    padding-left: 10px;
-    a {
-      text-decoration: none;
-      color: black;
-    }
   }
 }
 </style>
