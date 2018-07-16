@@ -1,14 +1,14 @@
 <template lang="pug">
-  section
-    top-page
+  section.st-container
+    l-header
 </template>
 
 <script>
-  import TopPage from '~/components/top.vue'
+  import lHeader from '~/components/layout/header.vue'
 
   export default {
     components: {
-      TopPage
+      lHeader
     }
   }
 </script>
