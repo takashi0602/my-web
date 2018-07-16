@@ -6,14 +6,12 @@
         i.material-icons dehaze
       input.on-off(type="checkbox" id="menu")
       ul.menu-list
-          li
-            a(href="/") トップ
-          li
-            a(href="/profile") プロフィール
-          li
-            a(href="") リンク3
-          li
-            a(href="") リンク4
+        li
+          a(href="/") トップ
+        li
+          a(href="/profile") プロフィール
+        li
+          a(href="/product") 作品
 </template>
 
 <script>
@@ -76,6 +74,12 @@
   }
   .on-off:checked + ul{
     height: 200px;
+  }
+}
+
+.menu-list {
+  a {
+    cursor: pointer;
   }
 }
 </style>
