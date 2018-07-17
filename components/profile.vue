@@ -2,26 +2,27 @@
   main.p-profile
     h3.profile-title プロフィール
     .profile-img
-    .profile-list
-      .profile-label 名前：
-      .profile-name たかし
-    .profile-list
-      .profile-label 生年月日：
-      .profile-birthday 1998/06/02
-    .profile-list
-      .profile-label 趣味：
-      .profile-hobby ギター
-    .profile-list
-      .profile-label 資格：
-      .profile-qualiflcation 基本情報
-      // アイコン使用
-    .profile-list
-      .profile-twitter
-        a.twitter-link
-          i
-      .profile-github
-        a.github-link
-          i
+    .profile-area
+      .profile-list
+        .profile-label 名前：
+        .profile-name たかし
+      .profile-list
+        .profile-label 生年月日：
+        .profile-birthday 1998/06/02
+      .profile-list
+        .profile-label 趣味：
+        .profile-hobby ギター
+      .profile-list
+        .profile-label 資格：
+        .profile-qualiflcation 基本情報
+        // アイコン使用
+      .profile-sns
+        .profile-twitter
+          a.twitter-link
+            i
+        .profile-github
+          a.github-link
+            i
 </template>
 
 <script>
@@ -32,6 +33,11 @@
 
 .profile {
   font-size: 18px;
+  &-area {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
   &-title {
     font-size: 24px;
   }
@@ -44,16 +50,16 @@
     margin: 0 auto 50px auto;
     border-radius: 50%;
     @include desktop() {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
     }
   }
   &-list {
     margin-bottom: 20px;
+    border-bottom: 5px solid $green;
   }
   &-label {
     display: inline-block;
-    width: 100px;
   }
   &-name {
     display: inline-block;
