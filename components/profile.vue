@@ -10,19 +10,19 @@
         .profile-label 生年月日：
         .profile-birthday 1998/06/02
       .profile-list
-        .profile-label 趣味：
-        .profile-hobby ギター
-      .profile-list
         .profile-label 資格：
         .profile-qualiflcation 基本情報
+      .profile-list
+        .profile-label 趣味：
+        .profile-hobby ギター
         // アイコン使用
       .profile-sns
         .profile-twitter
-          a.twitter-link
-            i
+          a.twitter-link(href="https://twitter.com/aJDHpAglNUJepZ9")
+            i.fab.fa-twitter
         .profile-github
-          a.github-link
-            i
+          a.github-link(href="https://github.com/takashi0602")
+            i.fab.fa-github
 </template>
 
 <script>
@@ -47,16 +47,21 @@
     background-image: url("~static/images/takashi.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 20px auto;
+    border: 10px solid $green;
     border-radius: 50%;
     @include desktop() {
       width: 250px;
       height: 250px;
+      margin: 0 auto 50px auto;
     }
   }
   &-list {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-bottom: 5px solid $green;
+    @include desktop() {
+      margin-bottom: 20px;
+    }
   }
   &-label {
     display: inline-block;

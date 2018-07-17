@@ -1,7 +1,7 @@
 <template lang="pug">
   section
+    l-header
     .st-container
-      l-header
       p-profile
 </template>
 

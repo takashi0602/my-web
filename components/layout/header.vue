@@ -1,17 +1,18 @@
 <template lang="pug">
   header.l-header
-    h1.header-title MySite
-    .menu
-      label(for="menu")
-        i.fas.fa-bars
-      input.on-off(type="checkbox" id="menu")
-      ul.menu-list
-        li
-          a(href="/my-web/") トップ
-        li
-          a(href="/my-web/profile") プロフィール
-        li
-          a(href="/my-web/product") 作品
+    .st-container
+      h1.header-title MySite
+      .menu
+        label(for="menu")
+          i.fas.fa-bars
+        input.on-off(type="checkbox" id="menu")
+        ul.menu-list
+          li
+            a(href="/my-web/") トップ
+          li
+            a(href="/my-web/profile") プロフィール
+          li
+            a(href="/my-web/product") 作品
 </template>
 
 <script>
@@ -21,19 +22,27 @@
 @import "~assets/scss/library/mixin.scss";
 
 .l-header {
+
+}
+
+.st-container {
   position: relative;
 }
 
 .header-title {
   display: inline-block;
   margin: 0;
-  line-height: 100px;
+  line-height: 80px;
+  @include desktop() {
+    line-height: 100px;
+  }
 }
 
 .menu {
   display: inline-block;
   position: absolute;
-  top: 30px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 10px;
   label {
     display: block;
@@ -44,25 +53,29 @@
       display: none;
     }
     i {
-      font-size: 40px;
+      font-size: 26px;
     }
   }
   .on-off{
     display: none;
   }
   &-list {
+    position: relative;
+    right: -10px;
     transition: 0.5s;
     margin: 0;
     padding: 0;
     list-style: none;
     height: 0;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 999;
     @include desktop() {
+      position: static;
       height: auto;
     }
     li {
       padding: 5px;
+      z-index: 1000;
       @include desktop() {
         display: inline-block;
       }
@@ -75,7 +88,7 @@
     }
   }
   .on-off:checked + ul{
-    height: 200px;
+    height: 102px;
   }
 }
 
