@@ -2,17 +2,17 @@
   section
     .st-container
       l-header
-      p-profile
+      p-product
 </template>
 
 <script>
   import lHeader from '~/components/layout/header.vue'
-  import pProfile from '~/components/profile.vue'
+  import pProduct from '~/components/product.vue'
 
   export default {
     components: {
       lHeader,
-      pProfile
+      pProduct
     }
   }
 </script>

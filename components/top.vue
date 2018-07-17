@@ -259,7 +259,6 @@
     height: 0;
     overflow: hidden;
     opacity: 0;
-    background: $yellow;
     animation: display2 3s 16s 1 forwards;
   }
   &-list {

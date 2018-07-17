@@ -34,7 +34,7 @@
   display: inline-block;
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 10px;
   label {
     display: block;
     margin: 0;
