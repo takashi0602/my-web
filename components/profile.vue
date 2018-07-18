@@ -11,10 +11,10 @@
         .profile-birthday 1998/06/02
       .profile-list
         .profile-label 資格：
-        .profile-qualiflcation 基本情報
+        .profile-qualiflcation 基本情報技術者試験
       .profile-list
-        .profile-label 趣味：
-        .profile-hobby ギター
+        .profile-label 推し：
+        .profile-hobby 小池美波 あの(ゆるめるモ!)
       .profile-sns
         .profile-twitter
           a.twitter-link(href="https://twitter.com/aJDHpAglNUJepZ9" target="_blank")

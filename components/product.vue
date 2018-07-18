@@ -34,10 +34,12 @@
     cursor: pointer;
     width: 100%;
     height: 240px;
+    box-sizing: border-box;
     background-image: url("~static/images/bookshelf.png");
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 10px;
+    border: 10px solid $green;
+    border-radius: 20px;
     @include desktop() {
       height: 480px;
     }
@@ -47,10 +49,12 @@
     cursor: pointer;
     width: 100%;
     height: 240px;
+    box-sizing: border-box;
     background-image: url("~static/images/chat-mammoth.png");
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 10px;
+    border: 10px solid $green;
+    border-radius: 20px;
     @include desktop() {
       height: 480px;
     }
