@@ -36,7 +36,4 @@ module.exports = {
       }
     }
   },
-  router: {
-    base: '/my-web/'
-  }
 }

@@ -8,11 +8,11 @@
         input.on-off(type="checkbox" id="menu")
         ul.menu-list
           li
-            a(href="/my-web/") トップ
+            a(href="/") トップ
           li
-            a(href="/my-web/profile") プロフィール
+            a(href="/profile") プロフィール
           li
-            a(href="/my-web/product") 作品
+            a(href="/product") 作品
 </template>
 
 <script>

@@ -20,8 +20,8 @@
       .top-list
         .top-img
         .top-links
-          a.top-link1(href="/my-web/profile") プロフィール
-          a.top-link2(href="/my-web/product") 作品
+          a.top-link1(href="/profile") プロフィール
+          a.top-link2(href="/product") 作品
 </template>
 
 <script>
