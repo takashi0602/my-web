@@ -22,6 +22,9 @@
   &-title {
     font-size: 24px;
   }
+  &-list {
+    margin-bottom: 20px;
+  }
   &-link {
     text-decoration: none;
     cursor: pointer;
