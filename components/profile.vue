@@ -15,7 +15,6 @@
       .profile-list
         .profile-label 趣味：
         .profile-hobby ギター
-        // アイコン使用
       .profile-sns
         .profile-twitter
           a.twitter-link(href="https://twitter.com/aJDHpAglNUJepZ9")
@@ -23,6 +22,7 @@
         .profile-github
           a.github-link(href="https://github.com/takashi0602")
             i.fab.fa-github
+  </span>
 </template>
 
 <script>
@@ -48,19 +48,21 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto 20px auto;
-    border: 10px solid $green;
+    border: 7px solid $green;
     border-radius: 50%;
     @include desktop() {
       width: 250px;
       height: 250px;
       margin: 0 auto 50px auto;
+      border: 10px solid $green;
     }
   }
   &-list {
     margin-bottom: 15px;
-    border-bottom: 5px solid $green;
+    border-bottom: 3px solid $green;
     @include desktop() {
       margin-bottom: 20px;
+      border-bottom: 5px solid $green;
     }
   }
   &-label {
@@ -77,6 +79,41 @@
   }
   &-qualiflcation {
     display: inline-block;
+  }
+  &-sns {
+    text-align: center;
+  }
+  &-twitter {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  &-github {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.twitter-link {
+  text-decoration: none;
+  cursor: pointer;
+  i {
+    color: #00aced;
+    font-size: 30px;
+    @include desktop() {
+      font-size: 40px;
+    }
+  }
+}
+
+.github-link {
+  text-decoration: none;
+  cursor: pointer;
+  i {
+    color: #333;
+    font-size: 30px;
+    @include desktop() {
+      font-size: 40px;
+    }
   }
 }
 </style>

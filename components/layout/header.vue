@@ -41,13 +41,15 @@
 .menu {
   display: inline-block;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 27px;
   right: 10px;
+  @include desktop() {
+    top: 50%;
+    transform: translateY(-50%);
+  }
   label {
     display: block;
     margin: 0;
-    color: #000;
     text-align: right;
     @include desktop() {
       display: none;
@@ -80,10 +82,11 @@
         display: inline-block;
       }
       a {
-        color: black;
+        color: #333;
         text-decoration: none;
         display: inline-block;
         width: 100%;
+        cursor: pointer;
       }
     }
   }
