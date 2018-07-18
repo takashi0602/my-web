@@ -17,10 +17,10 @@
         .profile-hobby ギター
       .profile-sns
         .profile-twitter
-          a.twitter-link(href="https://twitter.com/aJDHpAglNUJepZ9")
+          a.twitter-link(href="https://twitter.com/aJDHpAglNUJepZ9" target="_blank")
             i.fab.fa-twitter
         .profile-github
-          a.github-link(href="https://github.com/takashi0602")
+          a.github-link(href="https://github.com/takashi0602" target="_blank")
             i.fab.fa-github
   </span>
 </template>
