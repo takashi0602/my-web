@@ -2,6 +2,8 @@
 
 ポートフォリオサイト
 
+https://takashi0602.github.io/my-web/
+
 ## Build Setup
 
 ``` bash
