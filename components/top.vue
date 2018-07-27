@@ -66,13 +66,19 @@
   top: 50%;
   left: 50%;
   transform-origin: center;
-  transform: translate(-50%, -50%) scale(50, 50);
+  transform: translate(-50%, -50%) scale(12, 12);
   animation: circle 4s 1 forwards;
+  @include desktop() {
+    transform: translate(-50%, -50%) scale(50, 50);
+  }
 }
 
 @keyframes circle {
   0% {
-    transform: translate(-50%, -50%) scale(50, 50);
+    transform: translate(-50%, -50%) scale(12, 12);
+    @include desktop() {
+      transform: translate(-50%, -50%) scale(50, 50);
+    }
   }
   100% {
     transform: translate(-50%, -50%) scale(0, 0);
