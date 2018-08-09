@@ -66,12 +66,15 @@
   top: 50%;
   left: 50%;
   transform-origin: center;
-  transform: translate(-50%, -50%) scale(50, 50);
+  transform: translate(-50%, -50%) scale(1, 1);
   animation: circle 4s 1 forwards;
 }
 
 @keyframes circle {
   0% {
+    transform: translate(-50%, -50%) scale(1, 1);
+  }
+  1% {
     transform: translate(-50%, -50%) scale(50, 50);
   }
   100% {
